@@ -48,9 +48,9 @@ app.use(require('./routes/index_routes'));
 
 ////server
 
+app.listen(process.env.PORT, () => { console.log(`Hello World Application is running on port ${process.env.PORT}`) })
+//app.listen(4000, ()=>{
 
-app.listen(4000, ()=>{
-
-    console.log("server on port "+app.get('port'));
+ //   console.log("server on port "+app.get('port'));
 })
 
